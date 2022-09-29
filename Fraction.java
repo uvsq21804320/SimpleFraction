@@ -1,4 +1,4 @@
-class Fraction implements Comparable {
+class Fraction implements Comparable<Fraction> {
     public int _numerateur;
     public int _denominateur;
 
@@ -61,7 +61,10 @@ class Fraction implements Comparable {
         return doubleValue() == f.doubleValue();
     }
 
-    //compareTo
+    public int compareTo(Fraction f) {
+        if(f._numerateur * _denominateur == f._denominateur * _numerateur) return 0;
+        return this.doubleValue() > f.doubleValue() ? 1 : -1;
+    }
 
     public String toString() {
         return  _numerateur + " / " + _denominateur;
