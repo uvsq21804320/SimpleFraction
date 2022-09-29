@@ -44,11 +44,21 @@ class Fraction {
 
     /* pgcd de a et b, avec a >= b >= 0 */
     int pgcd(int a, int b) {
-        assert a >= b : "Erreur pgcd : a < b";
-        assert a >= 0 && b >= 0 : "Erreur pgcd : entier negatif";
         if((b < 2) || (a % b == 0))
             return b;
         return pgcd(b, a % b);
+    }
+
+    public Fraction add(Fraction f) {
+        Fraction res = new Fraction();
+        res._numerateur = f._numerateur * _denominateur + _numerateur * f._denominateur;
+        res._denominateur = f._denominateur * _denominateur;
+        res.reduce();   
+        return res;
+    }
+
+    public boolean equals(Fraction f) {
+        return doubleValue() == f.doubleValue();
     }
 
     public String toString() {

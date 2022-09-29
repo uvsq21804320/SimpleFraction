@@ -9,6 +9,8 @@ public class Main {
         frac.reduce();
         assert frac.getNumerateur() == -3 : "Erreur reduce";
         assert frac.getDenominateur() == 4 : "Erreur reduce";
+        assert frac.equals(new Fraction(-24, 32)) : "Erreur equals";
+        assert frac.add(new Fraction(5, 8)).equals(new Fraction(-1, 8)) : "Erreur : add";
         System.out.println("Everything fine pal");
     }
 }
