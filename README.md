@@ -16,16 +16,16 @@ Dans cet exercice, vous créerez une classe `Fraction` représentant un nombre r
 
 1. Sur la forge, créez le dépôt (_repository_) `SimpleFraction`;
 En terme de *commits*, quelle différence constatez-vous entre cocher une (ou plusieurs) des cases *Initialize this repository with* et n'en cocher aucune ?
-    > Répondre ici
+    > Quand on coche des cases, un commit initial apparaît
 
     *Pour la suite, ne cochez aucune de ces cases*.
 1. Localement, configurez `git` avec votre nom (`user.name`) et votre email (`user.email`) (cf. [Personnalisation de Git](https://git-scm.com/book/fr/v2/Personnalisation-de-Git-Configuration-de-Git));
     ```bash
-    # Répondre ici
+    oui
     ```
 1. Initialisez le dépôt `git` local pour le projet (cf. [Démarrer un dépôt Git](https://git-scm.com/book/fr/v2/Les-bases-de-Git-D%C3%A9marrer-un-d%C3%A9p%C3%B4t-Git));
     ```bash
-    # Répondre ici
+    oui
     ```
 1. Dans votre IDE, créez la classe `Fraction` (vide pour le moment) et la classe `Main` (avec un simple affichage) dans le projet (cf. [Méthode `main`](https://docs.oracle.com/javase/specs/jls/se19/html/jls-12.html#jls-12.1.4));
 Vérifiez que le projet compile et s'exécute dans l'IDE;
